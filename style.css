@@ -1,0 +1,52 @@
+/* Paleta em escala de cinza + estilos gerais */
+:root{
+	--gray-900: #0f1720;
+	--gray-800: #1f2933;
+	--gray-700: #374151;
+	--gray-600: #4b5563;
+	--gray-500: #6b7280;
+	--gray-400: #9ca3af;
+	--gray-300: #d1d5db;
+	--gray-200: #e5e7eb;
+	--gray-100: #f3f4f6;
+	--white: #ffffff;
+}
+
+/* Página */
+body.bg-page{
+	background: var(--gray-100);
+	color: var(--gray-900);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+.text-page{ color: var(--gray-900); }
+
+/* Cards e containers */
+.card{ background: var(--white); border: 1px solid var(--gray-200); }
+.navbar, .bg-white{ background: var(--white) !important; }
+
+/* Formulário */
+.form-control{ background: transparent; border: 1px solid var(--gray-300); color: var(--gray-900); }
+.form-control::placeholder{ color: var(--gray-400); }
+.form-control:focus{ box-shadow: 0 0 0 .12rem rgba(55,65,81,0.06); border-color: var(--gray-400); }
+
+.form-check-input{ width:1.15em; height:1.15em; }
+
+/* Botões */
+.btn-dark{ background: linear-gradient(180deg, var(--gray-800), var(--gray-700)); border: none; }
+.btn-dark:hover{ filter:brightness(.95); }
+
+/* Tabela */
+.table thead{ background: var(--gray-200); }
+.table tbody tr:hover{ background: var(--gray-100); }
+.table td, .table th{ border-top: none; color: var(--gray-800); }
+
+/* Rodapé */
+footer{ background: var(--white); color: var(--gray-600); }
+
+/* Pequenos ajustes responsivos */
+@media (max-width: 576px){
+	.navbar-brand{ font-size: 1rem; }
+}
+
