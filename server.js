@@ -7,10 +7,10 @@ app.use(cors());
 app.use(express.json());
 
 const pool = new Pool({
-    user: 'patric20',
-    host: 'patricestudossql.postgres.database.azure.com',
-    database: 'cadastro_pessoa',
-    password: '220304P@t',
+    user: '',
+    host: '',
+    database: '',
+    password: '',
     port: 5432,
     ssl: true
 });
